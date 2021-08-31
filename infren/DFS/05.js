@@ -1,18 +1,19 @@
 let arr = [81, 58, 42, 33, 61];
 
-function solution(c, sum) {
-  let answer;
+function solution(c, arr) {
+  let answer = Number.MIN_SAFE_INTEGER;
   let n = arr.length;
 
   function dfs(L, sum) {
-    //   총 바둑이들과 같으면
-    // 태우는 경의 수 완성
+    // 무게제한 추가 (259)
+    if (sum > c) {
+      return;
+    }
+    //   부분집합 완성 (태우는경우에)
     if (L === n) {
       answer = Math.max(answer, sum);
     } else {
-      // 바둑이를 태운 경우
       dfs(L + 1, sum + arr[L]);
-      // 바둑이를 태우지 않은 경우
       dfs(L + 1, sum);
     }
   }

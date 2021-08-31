@@ -33,6 +33,7 @@ function solution(n, computers) {
       //   i2와 n이 같지 않을경우
       //한 배열안에서 다른 index들끼리 비교해야하므로?
       console.log(i2, n);
+      // 인접노드 중 자기 자신이 아니고
       if (i2 !== n) {
         //   1번째는 false c[0][1] === 1 이면 그게 아닌경우 종료
         //
