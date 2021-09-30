@@ -13,7 +13,9 @@ function solution(c, arr) {
     if (L === n) {
       answer = Math.max(answer, sum);
     } else {
+      // 다음 바둑이를 태우는 경우
       dfs(L + 1, sum + arr[L]);
+      // 바둑이를 태우지 않는 경우
       dfs(L + 1, sum);
     }
   }
