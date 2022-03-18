@@ -22,6 +22,13 @@ function sol(n, f) {
 
   function DFS(L, sum) {
     if (L === n) {
+    } else {
+      for (let i = 1; i < n; i++) {
+        if (ch[i] === 0) {
+          ch[i] = 1;
+          p[L] = i;
+        }
+      }
     }
   }
 

@@ -2,7 +2,7 @@
 function sol(arr, n, m) {
   // 총 갯수 구하기
   let answer = 0;
-
+  ``;
   // DFS를 이용하여 경우의 수
   function DFS(L, R, S) {
     if (L === n) {

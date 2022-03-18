@@ -34,3 +34,6 @@ function sol(s, e) {
 }
 
 console.log(sol(5, 14));
+
+-1, 0
+    - 1, 1
